@@ -1,0 +1,23 @@
+<!-- templates/product-view.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style.css">
+<title>Product View</title>
+</head>
+<body>
+	<h2>Product Details</h2>
+	<p>
+		ID: <span th:text="${product.id}"></span>
+	</p>
+	<p>
+		Name: <span th:text="${product.name}"></span>
+	</p>
+	<p>
+		Price: <span th:text="${product.price}"></span>
+	</p>
+	<a href="/products">Back to Product List</a>
+</body>
+</html>
